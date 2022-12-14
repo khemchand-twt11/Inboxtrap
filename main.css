@@ -1,0 +1,465 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;family=Poppins:wght@200;800;&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#top-section {
+  background-color: #f1f1f17d;
+  padding-bottom: 0;
+}
+html {
+  font-size: 62.5%;
+}
+.logo {
+  width: 15%;
+}
+.donate-heading-div {
+  background-color: #202c45;
+  color: #ffffff;
+  padding: 0.8rem;
+  font-size: 1.2rem;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+}
+.donate-heading {
+  background-color: #202c45;
+}
+.donate-heading a {
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #202c45;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 9.6rem;
+  padding: 0 14.2rem;
+}
+/**************************************/
+/*NAVIGATION*/
+/**************************************/
+.main-nav-list {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 5.2rem;
+}
+.main-nav-links {
+  text-decoration: none;
+  color: #243f5c;
+  font-weight: 700;
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+.main-nav-btn1 {
+  border: 1px solid #243f5c;
+  padding: 0.6rem 1.6rem;
+  border-radius: 0.7rem;
+}
+.main-nav-btn1:hover {
+  background-color: #243f5c;
+  color: #fff;
+}
+.main-nav-btn2 {
+  background-color: #22d172;
+  padding: 0.6rem 1.6rem;
+  border-radius: 0.7rem;
+  color: #ffffff;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+}
+.main-nav-btn2:hover {
+  background-color: #45e890;
+}
+
+.sub-header {
+  text-align: center;
+
+  width: 70%;
+  margin: auto;
+  margin-top: 5.2rem;
+}
+.sub-header-heading {
+  font-size: 2.2rem;
+  color: #202c45;
+  margin-bottom: 3.6rem;
+  font-family: "Poppins", sans-serif;
+}
+.sub-header-para {
+  font-size: 2rem;
+  color: #202c45;
+  line-height: 4.2rem;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+.sub-header-btn {
+  margin-top: 4.8rem;
+  padding: 2rem;
+}
+
+.sub-header-btn-link {
+  text-decoration: none;
+  font-size: 1.6rem;
+  background-color: #22d172;
+  border-radius: 0.7rem;
+  padding: 1.2rem 1.8rem;
+  color: #fff;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+}
+.sub-header-btn-link:hover {
+  background-color: #45e890;
+}
+/* programming images section  */
+.programming-container {
+  width: 70%;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3.2rem;
+}
+.programming {
+  margin-left: 4.2rem;
+}
+.programming > img {
+  width: 56%;
+}
+
+/* big banner image  */
+.big-banner {
+  width: 80%;
+
+  margin: auto;
+  margin-top: 3.2rem;
+}
+.big-banner-img {
+  width: 100%;
+}
+
+.big-sub-banner {
+  position: relative;
+}
+
+.pause-btn {
+  width: 8%;
+  position: absolute;
+  top: 40%;
+  left: 46%;
+  border-radius: 50%;
+}
+
+/* first  middle section  */
+#middle-section {
+  width: 80%;
+  margin: auto;
+  margin-top: 3.2rem;
+  padding-bottom: 7.2rem;
+}
+#middle-section > div > h1 {
+  font-size: 3.4rem;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+
+  margin-bottom: 0.8rem;
+}
+.middle-section-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 3.8rem;
+  gap: 3.2rem 1.2rem;
+  margin: auto;
+  margin-top: 3.4rem;
+  width: 95%;
+}
+.middle-section-flex {
+  display: flex;
+}
+.middle-section-img {
+  width: 22%;
+  margin-left: 1.8rem;
+}
+
+.middle-section-img > img {
+  width: 100%;
+}
+.middle-section-content > h2 {
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  width: 80%;
+  margin-left: 1.2rem;
+  color: #202c45;
+}
+.middle-section-content > p {
+  font-size: 1.6rem;
+  width: 80%;
+  margin-top: 0.9rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 100;
+  line-height: 2.4rem;
+  margin-left: 1.2rem;
+  color: #202c45;
+}
+
+/* second middle section  */
+.second-middle-main-headings {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  color: #202c45;
+}
+.second-middle-main-headings > h2 {
+  font-size: 3.4rem;
+  padding-top: 3.2rem;
+}
+.second-middle-main-headings > p {
+  font-size: 1.6rem;
+  padding-top: 1.2rem;
+  font-family: "Inter", sans-serif;
+}
+.second-middle-section {
+  display: flex;
+  width: 72%;
+  margin: auto;
+  padding: 2.4rem 0;
+  align-items: center;
+}
+.second-middle-section > div > img {
+  width: 80%;
+}
+.second-middle-list {
+  display: flex;
+  padding-bottom: 1.2rem;
+}
+
+.second-middle-list h2 {
+  font-size: 1.8rem;
+  width: 60%;
+  margin-left: 1.2rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.second-middle-main {
+  padding: 4.2rem 0;
+  font-family: "Poppins", sans-serif;
+
+  background-color: #f1f1f17d;
+}
+
+/* big banenr image section  */
+.big-banner-img-main {
+  padding: 4.2rem 0;
+}
+.big-banner-img {
+  padding: 4.2rem;
+  text-align: center;
+}
+
+.big-banner-img > div > h1 {
+  font-size: 3.4rem;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 1.6rem;
+}
+.big-banner-img > div:nth-child(2) {
+  width: 70%;
+  margin: auto;
+  padding-top: 4.2rem;
+}
+.big-banner-img > div:nth-child(2) > img {
+  width: 90%;
+}
+
+.big-banner-list {
+  width: 65%;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+}
+.big-banner-list h3 {
+  font-size: 2.2rem;
+}
+.big-banner-list li {
+  font-size: 1.8rem;
+  padding: 1.2rem 1rem;
+}
+
+.big-banner-btn {
+  margin-top: 8.2rem;
+  text-align: center;
+}
+.new-programming-img {
+  text-align: center;
+  padding-top: 7.2rem;
+  padding-bottom: 3.6rem;
+}
+.new-programming-img h1 {
+  font-size: 3.4rem;
+}
+.new-programming-container {
+  padding-bottom: 7.4rem;
+}
+.faq {
+  padding: 5.2rem;
+  background-color: #f1f1f17d;
+  position: relative;
+}
+.faq > h1 {
+  font-size: 3.4rem;
+  padding: 4.2rem;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.faq-grid {
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.4rem 4.2rem;
+  margin: auto;
+  padding-top: 3.2rem;
+}
+.faq-grid h1 {
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+}
+.faq-grid p {
+  font-size: 1.6rem;
+  font-family: "Inter", sans-serif;
+  line-height: 2.38rem;
+  margin-top: 2.4rem;
+}
+.faq-grid-child {
+  background-color: #ffffff;
+  padding: 3.2rem 8.2rem;
+  border-radius: 1rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  position: relative;
+}
+.faq-grid-child h1 {
+  font-size: 2rem;
+}
+
+.faq-grid-child > div > img {
+  position: absolute;
+  top: -8%;
+}
+.main-faq-img {
+  width: 50rem;
+  height: 30rem;
+  background: url(/images/faqqq.svg);
+  background-repeat: no-repeat;
+
+  position: absolute;
+  left: 30%;
+  bottom: 10%;
+}
+.main-footer {
+  background-color: #1a2e44;
+  height: 30rem;
+}
+.main-footer h3 {
+  margin-top: 3.2rem;
+  color: #fff;
+  font-size: 2.8rem;
+  font-family: "Inter", sans-serif;
+}
+.main-footer > div:nth-child(1) {
+  margin-top: 5.2rem;
+}
+.main-footer h1 {
+  color: #fff;
+  margin-bottom: 1.6rem;
+  font-size: 5.2rem;
+  font-family: "Poppins", sans-serif;
+}
+.main-footer {
+  display: flex;
+
+  justify-content: space-around;
+  margin: auto;
+
+  height: 37rem;
+}
+
+.main-footer img {
+  width: 160%;
+}
+
+.last-footer {
+  display: grid;
+  width: 70%;
+  margin: auto;
+  padding-top: 4.2rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+.last-footer > div > h3 {
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 1.2rem;
+}
+.last-footer > div a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #1a2e44;
+  display: inline-block;
+  padding: 1rem 0;
+  font-family: "Inter", sans-serif;
+}
+.last-footer > div a:hover {
+  color: #22d172;
+}
+.railsware-logo {
+  width: 38%;
+}
+.railsware-logo:hover {
+  border: 1px solid #22d172;
+}
+.socials-div {
+  display: flex;
+  width: 100%;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.socials:nth-child(1) {
+  width: 30%;
+}
+.socials:nth-child(1):hover {
+  width: 31%;
+}
+#facebook {
+  width: 15%;
+}
+#facebook:hover {
+  width: 16%;
+}
+.social-div {
+  position: relative;
+}
+
+.copyright {
+  font-size: 1.6rem;
+  position: absolute;
+  bottom: 1.2rem;
+  left: 0;
+}
+/* media queries  */
+@media screen and (max-width: 1020px) and (min-width: 600px) {
+  .logo {
+    width: 34%;
+  }
+  .middle-section-img {
+    width: 75%;
+    margin-left: 1.8rem;
+  }
+
+  .middle-section-img > img {
+    width: 100%;
+  }
+}
