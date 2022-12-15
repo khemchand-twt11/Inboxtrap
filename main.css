@@ -5,6 +5,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+.top-menu {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
 #top-section {
   background-color: #f1f1f17d;
   padding-bottom: 0;
@@ -12,9 +18,11 @@
 html {
   font-size: 62.5%;
 }
-.logo {
-  width: 15%;
+#main-header {
+  position: sticky;
+  top: 0;
 }
+
 .donate-heading-div {
   background-color: #202c45;
   color: #ffffff;
@@ -32,17 +40,21 @@ html {
   cursor: pointer;
   background-color: #202c45;
 }
+/**************************************/
+/*NAVIGATION*/
+/**************************************/
 
+.logo {
+  width: 33%;
+}
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 9.6rem;
+  height: 7rem;
   padding: 0 14.2rem;
 }
-/**************************************/
-/*NAVIGATION*/
-/**************************************/
+
 .main-nav-list {
   list-style-type: none;
   display: flex;
@@ -77,6 +89,7 @@ html {
   background-color: #45e890;
 }
 
+/* heading section  */
 .sub-header {
   text-align: center;
 
@@ -358,6 +371,7 @@ html {
   left: 30%;
   bottom: 10%;
 }
+
 .main-footer {
   background-color: #1a2e44;
   height: 30rem;
@@ -423,21 +437,19 @@ html {
   display: flex;
   width: 100%;
   list-style: none;
-  align-items: center;
-  justify-content: center;
 }
 
-.socials:nth-child(1) {
-  width: 30%;
+.socials {
+  width: 108%;
+  padding-left: 1.9rem;
+  margin-left: 0.5rem;
 }
-.socials:nth-child(1):hover {
-  width: 31%;
+.socials:hover {
+  width: 109%;
 }
-#facebook {
-  width: 15%;
-}
-#facebook:hover {
-  width: 16%;
+.email-txt {
+  display: inline-block;
+  margin: auto;
 }
 .social-div {
   position: relative;
@@ -452,7 +464,7 @@ html {
 /* media queries  */
 @media screen and (max-width: 1020px) and (min-width: 600px) {
   .logo {
-    width: 34%;
+    width: 80%;
   }
   .middle-section-img {
     width: 75%;

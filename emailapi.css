@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;family=Poppins:wght@200;800;&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.top-menu {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+#top-section {
+  background-color: #f1f1f17d;
+  padding-bottom: 0;
+}
+html {
+  font-size: 62.5%;
+}
+#main-header {
+  position: sticky;
+  top: 0;
+}
+
+.donate-heading-div {
+  background-color: #202c45;
+  color: #ffffff;
+  padding: 0.8rem;
+  font-size: 1.2rem;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+}
+.donate-heading {
+  background-color: #202c45;
+}
+.donate-heading a {
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #202c45;
+}
+/**************************************/
+/*NAVIGATION*/
+/**************************************/
+
+.logo {
+  width: 33%;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 7rem;
+  padding: 0 14.2rem;
+}
+
+.main-nav-list {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 5.2rem;
+}
+.main-nav-links {
+  text-decoration: none;
+  color: #243f5c;
+  font-weight: 700;
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+.main-nav-btn1 {
+  border: 1px solid #243f5c;
+  padding: 0.6rem 1.6rem;
+  border-radius: 0.7rem;
+}
+.main-nav-btn1:hover {
+  background-color: #243f5c;
+  color: #fff;
+}
+.main-nav-btn2 {
+  background-color: #22d172;
+  padding: 0.6rem 1.6rem;
+  border-radius: 0.7rem;
+  color: #ffffff;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+}
+.main-nav-btn2:hover {
+  background-color: #45e890;
+}
+.emailapi-link {
+  border-bottom: 0.4rem solid #22d172;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+.sub-header-btn-link {
+  text-decoration: none;
+  display: block;
+  width: 16%;
+  font-size: 1.8rem;
+  margin-top: 3.8rem;
+  background-color: #22d172;
+  border-radius: 0.7rem;
+  padding: 1.8rem 1.2rem;
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+}
+.sub-header-btn-link:hover {
+  background-color: #45e890;
+}
+
+/**************************************/
+/*First Section*/
+/**************************************/
+
+.first-main-section {
+  margin: auto;
+  margin-top: 9rem;
+  padding-bottom: 6rem;
+}
+.first-section {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.first-sub-section {
+  margin-left: 10rem;
+  margin-top: 10rem;
+}
+.first-sub-section h1 {
+  font-size: 4.4rem;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 4.4rem;
+}
+.first-sub-section p {
+  font-size: 2.3rem;
+  width: 67%;
+  font-family: "Inter", sans-serif;
+  font-weight: 100;
+  margin-bottom: 2.8rem;
+  line-height: 3.8rem;
+}
+
+.second-sub-section img {
+  width: 95%;
+  align-self: flex-end;
+}
+/**************************************/
+/*Second Section*/
+/**************************************/
+
+.second-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 70%;
+  margin: auto;
+}
+
+/**************************************/
+/*footer*/
+/**************************************/
+.main-footer {
+  background-color: #1a2e44;
+  height: 30rem;
+}
+.main-footer h3 {
+  margin-top: 3.2rem;
+  color: #fff;
+  font-size: 2.8rem;
+  font-family: "Inter", sans-serif;
+}
+.main-footer > div:nth-child(1) {
+  margin-top: 5.2rem;
+}
+.main-footer h1 {
+  color: #fff;
+  margin-bottom: 1.6rem;
+  font-size: 5.2rem;
+  font-family: "Poppins", sans-serif;
+}
+.main-footer {
+  display: flex;
+
+  justify-content: space-around;
+  margin: auto;
+
+  height: 37rem;
+}
+
+.main-footer img {
+  width: 160%;
+}
+
+.last-footer {
+  display: grid;
+  width: 70%;
+  margin: auto;
+  padding-top: 4.2rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+.last-footer > div > h3 {
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 1.2rem;
+}
+.last-footer > div a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #1a2e44;
+  display: inline-block;
+  padding: 1rem 0;
+  font-family: "Inter", sans-serif;
+}
+.last-footer > div a:hover {
+  color: #22d172;
+}
+.railsware-logo {
+  width: 38%;
+}
+.railsware-logo:hover {
+  border: 1px solid #22d172;
+}
+.socials-div {
+  display: flex;
+  width: 100%;
+  list-style: none;
+}
+
+.socials {
+  width: 108%;
+  padding-left: 1.9rem;
+  margin-left: 0.5rem;
+}
+.socials:hover {
+  width: 109%;
+}
+.email-txt {
+  display: inline-block;
+  margin: auto;
+}
+.social-div {
+  position: relative;
+}
+
+.copyright {
+  font-size: 1.6rem;
+  position: absolute;
+  bottom: 1.2rem;
+  left: 0;
+}
