@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;family=Poppins:wght@200;600;800;&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+/**************************************/
+/*NAVIGATION STARTS*/
+/**************************************/
+
+.logo {
+  width: 33%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 9.6rem;
+  padding: 0 14.2rem;
+}
+.main-nav-list {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 5.2rem;
+}
+.main-nav-links {
+  text-decoration: none;
+  color: #243f5c;
+  font-weight: 700;
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+.main-nav-btn1 {
+  border: 1px solid #243f5c;
+  padding: 0.6rem 1.6rem;
+  border-radius: 0.7rem;
+}
+.main-nav-btn1:hover {
+  background-color: #243f5c;
+  color: #fff;
+}
+.main-nav-btn2 {
+  background-color: #22d172;
+  padding: 0.6rem 1.6rem;
+  border-radius: 0.7rem;
+  color: #ffffff;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+}
+.main-nav-btn2:hover {
+  background-color: #45e890;
+}
+.menu {
+  display: none;
+}
+
+/**************************************/
+/*MAIN STARTS HERE*/
+/**************************************/
+.main-content {
+  margin-bottom: 6.8rem;
+}
+.main-section {
+  display: flex;
+  width: 60%;
+  margin: auto;
+  margin-top: 5.2rem;
+  align-content: space-between;
+}
+.main-section-btns img {
+  width: 5%;
+}
+.main-section-btns h1 {
+  font-size: 3.6rem;
+  font-family: "Poppins", sans-serif;
+}
+.main-section-btns a {
+  font-size: 1.8rem;
+  text-decoration: none;
+  padding: 1.2rem;
+  color: #243f5c;
+  display: block;
+  border: 0.1rem solid #243f5c;
+  border-radius: 0.5rem;
+  width: 70%;
+  margin-top: 2.4rem;
+  text-align: center;
+}
+.main-section-btns a:hover {
+  background-color: #566583;
+  color: #fff;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.main-section a + p {
+  font-size: 1.6rem;
+  width: 70%;
+  margin-top: 3.8rem;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+}
+
+.submit {
+  display: block;
+  width: 70%;
+  padding: 1.6rem 1.2rem;
+  border-radius: 0.6rem;
+  border: 1px solid black;
+  border: none;
+  background-color: #22d172;
+  color: #fff;
+  margin-top: 1.2rem;
+}
+.submit:hover {
+  background-color: #45e890;
+}
+.main-section label {
+  font-size: 1.6rem;
+  display: block;
+  font-family: "Inter", sans-serif;
+  padding: 0.7rem;
+}
+.email {
+  padding: 1.2rem;
+  width: 70%;
+  border-radius: 0.6rem;
+  border: 1px solid #d0d3d8;
+}
+input[type="email"]:hover {
+  border: 1px solid blue;
+}
+.image {
+  display: block;
+  margin: auto;
+  margin-top: 4.8rem;
+}
+#insp {
+  padding-top: 1.4rem;
+  font-size: 1.7rem;
+  text-align: center;
+  width: 70%;
+}
+#ins {
+  border: none;
+  padding: 0;
+  margin-top: 0;
+  font-size: 1.7rem;
+  color: #4c83ee;
+}
+.img-text {
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+.div-1 {
+  width: 60%;
+}
+.div-2 {
+  width: 50%;
+}
+span {
+  padding-right: 1.4rem;
+}
+span:nth-child(3) {
+  padding: 0;
+}
+
+/* footer starts here  */
+
+.last-footer {
+  display: grid;
+  width: 70%;
+  margin: auto;
+  padding-top: 4.2rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+.last-footer > div > h3 {
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 1.2rem;
+}
+.last-footer > div a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #1a2e44;
+  display: inline-block;
+  padding: 1rem 0;
+  font-family: "Inter", sans-serif;
+}
+.last-footer > div a:hover {
+  color: #22d172;
+}
+.railsware-logo {
+  width: 38%;
+}
+.railsware-logo:hover {
+  border: 1px solid #22d172;
+}
+.socials-div {
+  display: flex;
+  width: 100%;
+  list-style: none;
+}
+
+.socials {
+  width: 108%;
+  padding-left: 1.9rem;
+  margin-left: 0.5rem;
+}
+.socials:hover {
+  width: 109%;
+}
+
+.social-div {
+  position: relative;
+}
+
+.footer {
+  background-color: #f9f9f7;
+}
+
+.info {
+  display: flex;
+  width: 80%;
+
+  margin: auto;
+  margin-top: 6.8rem;
+  padding-bottom: 3.4rem;
+}
+.info h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1.2rem;
+  font-family: "Poppins", sans-serif;
+}
+.info h3 + p {
+  font-size: 1.6rem;
+  font-family: "Inter", sans-serif;
+}
+.copyright {
+  width: 30%;
+  font-size: 1.6rem;
+  align-self: flex-end;
+  text-align: center;
+}
+.about {
+  width: 69%;
+}

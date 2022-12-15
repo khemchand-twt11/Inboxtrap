@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Inboxtrap</title>
     <link rel="stylesheet" href="/main.css" />
   </head>
   <body>
-    <div id="top-section">
+    <!-- <div id="top-section"> -->
+    <div class="top-menu">
       <div class="donate-heading-div">
         <h2 class="donate-heading">
           Stand with Ukraine UA <a href="">Donate to support</a>
@@ -16,77 +17,88 @@
       </div>
 
       <header class="header">
-        <img class="logo" src="images/inboxtrappp.svg" />
+        <a href=""> <img class="logo" src="images/inboxtrappp.svg" /></a>
+
         <nav class="main-nav">
           <ul class="main-nav-list">
             <li><a class="main-nav-links" href="#">Email Testing</a></li>
-            <li><a class="main-nav-links" href="#">Email API</a></li>
+            <li>
+              <a class="main-nav-links" href="/emailapi.html">Email API</a>
+            </li>
             <li><a class="main-nav-links" href="#">Pricing</a></li>
             <li><a class="main-nav-links" href="#"> Resources</a></li>
             <li>
-              <a class="main-nav-links main-nav-btn1" href="#"> Log In</a>
+              <a class="main-nav-links main-nav-btn1" href="/login.html">
+                Log In</a
+              >
             </li>
             <li style="margin-left: -4%">
-              <a class="main-nav-links main-nav-btn2" href="#"> Sign Up</a>
+              <a class="main-nav-links main-nav-btn2" href="/signup.html">
+                Sign Up</a
+              >
             </li>
           </ul>
         </nav>
       </header>
-      <!-- heading section  -->
+    </div>
 
-      <div class="sub-header">
-        <div class="sub-header-heading"><h1>Email Sandbox</h1></div>
-        <div>
-          <p class="sub-header-para">
-            Capture SMTP traffic from staging and dev environments
-          </p>
-          <p class="sub-header-para">
-            Automate test flows and scenarios with flexible API
-          </p>
-          <p class="sub-header-para">
-            Analyze email content for spam score and validate HTML/CSS
-          </p>
-        </div>
-        <div>
-          <div class="sub-header-btn">
-            <div>
-              <a class="sub-header-btn-link" href="">Sign Up For Free</a>
-            </div>
+    <!-- heading section  -->
+
+    <div class="sub-header">
+      <div class="sub-header-heading"><h1>Email Sandbox</h1></div>
+      <div>
+        <p class="sub-header-para">
+          Capture SMTP traffic from staging and dev environments
+        </p>
+        <p class="sub-header-para">
+          Automate test flows and scenarios with flexible API
+        </p>
+        <p class="sub-header-para">
+          Analyze email content for spam score and validate HTML/CSS
+        </p>
+      </div>
+      <div>
+        <div class="sub-header-btn">
+          <div>
+            <a class="sub-header-btn-link" href="/signup.html"
+              >Sign Up For Free</a
+            >
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- programming images section  -->
-      <div class="programming-container">
-        <div class="programming">
-          <img src="images/programming-img/rails.svg" alt="" />
-        </div>
-        <div class="programming">
-          <img src="images/programming-img/python.svg" alt="" />
-        </div>
-        <div class="programming">
-          <img src="images/programming-img/net.svg" alt="" />
-        </div>
-        <div class="programming">
-          <img src="images/programming-img/symfony.svg" alt="" />
-        </div>
-        <div class="programming">
-          <img src="images/programming-img/laravel.svg" alt="" />
-        </div>
+    <!-- programming images section  -->
+    <div class="programming-container">
+      <div class="programming">
+        <img src="images/programming-img/rails.svg" alt="" />
       </div>
-
-      <!-- big banner image -->
-      <div class="big-banner">
-        <div class="big-sub-banner">
-          <img
-            class="big-banner-img"
-            src="https://mailtrap.io/wp-content/uploads/2021/05/img__homepage-1024x610.png"
-            alt=""
-          />
-          <img class="pause-btn" src="images/pause.svg" alt="" />
-        </div>
+      <div class="programming">
+        <img src="images/programming-img/python.svg" alt="" />
+      </div>
+      <div class="programming">
+        <img src="images/programming-img/net.svg" alt="" />
+      </div>
+      <div class="programming">
+        <img src="images/programming-img/symfony.svg" alt="" />
+      </div>
+      <div class="programming">
+        <img src="images/programming-img/laravel.svg" alt="" />
       </div>
     </div>
+
+    <!-- big banner image -->
+    <div class="big-banner">
+      <div class="big-sub-banner">
+        <img
+          class="big-banner-img"
+          src="https://mailtrap.io/wp-content/uploads/2021/05/img__homepage-1024x610.png"
+          alt=""
+        />
+        <img class="pause-btn" src="images/pause.svg" alt="" />
+      </div>
+    </div>
+    <!-- </div> -->
 
     <!-- first  middle section  -->
     <div id="middle-section">
@@ -276,7 +288,7 @@
       </div>
 
       <div class="big-banner-btn">
-        <a class="sub-header-btn-link" href="">Sign Up For Free</a>
+        <a class="sub-header-btn-link" href="/signup.html">Sign Up For Free</a>
       </div>
     </div>
 
@@ -364,7 +376,7 @@
       <div>
         <h3>Create Your Free Account</h3>
         <h1>In 3 Click</h1>
-        <a class="sub-header-btn-link" href="">Sign Up Now</a>
+        <a class="sub-header-btn-link" href="/signup.html">Sign Up Now</a>
       </div>
 
       <div>
@@ -396,27 +408,32 @@
       </div>
       <div class="social-div">
         <h3>Contact</h3>
-        <div><a href="">email:khemchandsh3@gmail.com</a></div>
+        <div><a href="" class="email-txt">email:khemchandsh3@gmail.com</a></div>
         <ul class="socials-div">
           <li>
             <a href=""
               ><img
                 class="socials"
-                id="facebook"
-                src="/images/socials/facebook.svg"
+                src="https://assets.mailtrap.io/packs/assets/landing/facebook-0be93f551b662821a339.svg"
                 alt=""
             /></a>
           </li>
 
           <li>
             <a href=""
-              ><img class="socials" src="/images/socials/twitter.svg" alt=""
+              ><img
+                class="socials"
+                src="https://assets.mailtrap.io/packs/assets/landing/twitter-57fa29ba21896247fdc6.svg"
+                alt=""
             /></a>
           </li>
 
           <li>
             <a href="">
-              <img class="socials" src="/images/socials/linkedin.svg" alt=""
+              <img
+                class="socials"
+                src="https://assets.mailtrap.io/packs/assets/landing/linkedin-604440460898fa41700c.svg"
+                alt=""
             /></a>
           </li>
         </ul>
