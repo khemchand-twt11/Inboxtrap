@@ -151,11 +151,36 @@ html {
 /*Second Section*/
 /**************************************/
 
+.second-main-section > h1 {
+  font-size: 3.4rem;
+  margin-top: 3.2rem;
+  margin-bottom: 4.2rem;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
 .second-section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   width: 70%;
   margin: auto;
+}
+
+.second-section h1 {
+  font-size: 3.2rem;
+  margin-top: 6rem;
+  margin-left: 2.8rem;
+  width: 77%;
+}
+.second-section p {
+  font-size: 1.6rem;
+  margin-top: 3.2rem;
+  width: 78%;
+  margin-left: 2.8rem;
+  font-family: "Inter", sans-serif;
+  line-height: 2.8rem;
+}
+.text-div {
+  margin-top: 6.2rem;
 }
 
 /**************************************/
