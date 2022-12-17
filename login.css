@@ -11,7 +11,9 @@ html {
 /**************************************/
 /*NAVIGATION STARTS*/
 /**************************************/
-
+.newsvg:hover {
+  stroke: #ffffff;
+}
 .logo {
   width: 33%;
 }
