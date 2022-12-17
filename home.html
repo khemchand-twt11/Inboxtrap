@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home page</title>
+    <link rel="stylesheet" href="/home.css" />
+    <!-- Boxicons cdn  -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo-details">
+        <span class="logo-name"
+          ><img src="/images/inboxtrapnew.svg" alt=""
+        /></span>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="#">
+            <i class="bx bx-home-alt-2"></i>
+
+            <span class="link_name">Home</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a href="" class="link_name">Email API</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="icon-link">
+            <a href="#">
+              <i class="bx bx-send"></i>
+
+              <span class="link_name">Email API</span>
+            </a>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a href="" class="link_name">Email API</a></li>
+            <li><a href="#">Email Logs</a></li>
+            <li><a href="#">Stats</a></li>
+            <li><a href="#">Mailbos Providers</a></li>
+            <li><a href="#">Email Categories</a></li>
+            <li><a href="#">Sending Domains</a></li>
+            <li><a href="#">Suppressions</a></li>
+            <li><a href="#">Dedicated IPs</a></li>
+            <li><a href="#">Deliverability Alerts</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="icon-link">
+            <a href="#">
+              <i class="bx bx-envelope"></i>
+
+              <span class="link_name">Sandbox</span>
+            </a>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a href="" class="link_name">Sandbox</a></li>
+            <li><a href="#">Inboxes</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="icon-link">
+            <a href="#">
+              <i class="bx bx-wallet"></i>
+
+              <span class="link_name">Billing</span>
+            </a>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a href="" class="link_name">Billing</a></li>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Plans [Sandbox]</a></li>
+            <li><a href="#">Plans [Email API]</a></li>
+            <li><a href="#">Payment Method</a></li>
+            <li><a href="#">Settings</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bxs-user-detail"></i>
+
+            <span class="link_name">User Management</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a href="" class="link_name">User Management </a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="icon-link">
+            <a href="#">
+              <i class="bx bxs-key"></i>
+
+              <span class="link_name">API</span>
+            </a>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a href="" class="link_name">API</a></li>
+            <li><a href="#">API Tokens</a></li>
+            <li><a href="#">CORS Domains</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-cog"></i>
+
+            <span class="link_name">Account Settings</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a href="" class="link_name">Account Settings </a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="profile-details">
+        <div class="profile-content">
+          <i class="bx bxs-user"></i>
+        </div>
+
+        <div class="name-job">
+          <div class="profile_name">hello,<span> user</span></div>
+        </div>
+      </div>
+    </div>
+    <section class="home-section">
+      <div class="home-content">
+        <i class="bx bx-menu"></i>
+        <span class="text">Home</span>
+      </div>
+    </section>
+  </body>
+  <script>
+    let arrow = document.querySelectorAll(".arrow");
+    // console.log(arrow);
+    for (let index = 0; index < arrow.length; index++) {
+      arrow[index].addEventListener("click", (e) => {
+        let arrowParent = e.target.parentElement.parentElement;
+        console.log(arrowParent);
+        arrowParent.classList.toggle("showMenu");
+      });
+    }
+    let sidebar = document.querySelector(".sidebar");
+    let sidebarBtn = document.querySelector(".bx-menu");
+    console.log(sidebarBtn);
+    sidebarBtn.addEventListener("click", () => {
+      sidebar.classList.toggle("close");
+    });
+  </script>
+</html>

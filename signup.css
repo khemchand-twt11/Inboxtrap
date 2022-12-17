@@ -80,7 +80,7 @@ html {
   font-size: 3.6rem;
   font-family: "Poppins", sans-serif;
 }
-.main-section-btns a {
+.main-section-btns > a {
   font-size: 1.8rem;
   text-decoration: none;
   padding: 1.2rem;
@@ -147,12 +147,13 @@ input[type="email"]:hover {
   text-align: center;
   width: 70%;
 }
-#ins {
+.ins {
   border: none;
   padding: 0;
   margin-top: 0;
   font-size: 1.7rem;
   color: #4c83ee;
+  text-decoration: none;
 }
 .img-text {
   font-size: 1.6rem;
