@@ -2,10 +2,12 @@
 * {
   margin: 0;
   padding: 0;
+
   box-sizing: border-box;
   /* font-family: "Inter", sans-serif; */
   font-family: "Poppins", sans-serif;
 }
+
 .sidebar {
   position: fixed;
   top: 0;
@@ -13,7 +15,13 @@
   height: 100%;
   width: 210px;
   background: #1a2e44;
+  z-index: 100;
+  transition: all 0.5 ease;
 }
+.sidebar.close {
+  width: 50px;
+}
+
 .sidebar .logo-name {
   width: 2.2rem;
 
@@ -148,25 +156,31 @@
   color: #fff;
   font-size: 30px;
   /* margin: 0 14px 0 10px; */
-  padding: 5px 10px;
-  width: 210px;
-  background: #172537;
+  padding: 5px 12px;
+  /* width: 210px; */
+  /* background: #172537; */
   /* background: #38445e; */
+  cursor: pointer;
+}
+.sidebar .profile-details i:hover {
+  color: aqua;
 }
 
-.sidebar .profile-details .profile_name {
-  color: #fff;
-  font-size: 18px;
-  margin-left: 12px;
-  font-weight: 500;
-}
 .home-section {
   position: relative;
-  background: #e4e9f7;
+  /* background: #e4e9f7; */
   height: 98vh;
   left: 210px;
   width: calc(100%-210px);
+
   transition: all 0.5s ease;
+}
+
+.home-content {
+  width: 50%;
+}
+.home-content + h3 {
+  font-size: 43px;
 }
 .sidebar.close ~ .home-section {
   left: 50px;
@@ -190,4 +204,68 @@
 .home-section .home-content .text {
   font-size: 16px;
   font-weight: 900;
+}
+
+.side-content {
+  margin-left: 50px;
+  width: 80%;
+  /* border: 1px solid black; */
+  border-radius: 12px;
+  height: max-content;
+  /* margin: auto; */
+}
+.side-content > h3 {
+  font-size: 36px;
+}
+.sub-side-content {
+  display: flex;
+  gap: 30px;
+}
+.sub-side-content > div {
+  /* border: 1px solid red; */
+  border-radius: 18px;
+  width: 50%;
+}
+.sub-side-content > div img {
+  border-radius: 18px 18px 0 0;
+}
+.sub-side-content > div > div {
+  /* border: 1px solid darkblue; */
+  height: 120px;
+  padding: 20px;
+}
+.sub-side-content > div > div h1 {
+  font-size: 32px;
+}
+.sub-side-content > div > div:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.sub-side-content > div > div p {
+  font-size: 13px;
+}
+.sub-side-content > div > div:nth-child(2) a {
+  text-decoration: none;
+  padding: 12px 20px 12px 20px;
+  background-color: #4c83ee;
+  margin-right: 20px;
+  font-size: 13px;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.sub-side-content > div img {
+  width: 100%;
+}
+body {
+  overflow-x: hidden;
+}
+.video-image {
+  margin-bottom: 50px;
+  /* border: 1px solid black; */
+}
+.video-image img {
+  width: 100%;
 }

@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inboxtrap</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/main.css" />
   </head>
   <body>
@@ -184,6 +188,17 @@
             alt=""
           />
           <img class="pause-btn" src="images/pause.svg" alt="" />
+          <i class="bx bx-x" id="cross"></i>
+
+          <div class="video-container">
+            <video
+              class="video"
+              src="/video/video.mp4"
+              muted
+              autoplay
+              controls
+            ></video>
+          </div>
         </div>
       </div>
     </div>
@@ -533,4 +548,20 @@
     </div>
   </body>
 </html>
-<script></script>
+<script>
+  let pausebtn = document.querySelector(".pause-btn");
+  console.log(pausebtn);
+  let top_section = document.querySelector("#top-section");
+  // console.log(top_section);
+  let cross = document.getElementById("cross");
+  pausebtn.addEventListener("click", () => {
+    document.querySelector("video").style.display = "block";
+    document.querySelector("#cross").style.display = "block";
+
+    document.querySelector("video").style.opacity = "1";
+  });
+  cross.addEventListener("click", () => {
+    document.querySelector("video").style.display = "none";
+    cross.style.display = "none";
+  });
+</script>

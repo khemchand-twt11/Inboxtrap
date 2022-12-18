@@ -119,14 +119,15 @@
           </ul>
         </li>
       </ul>
+
       <div class="profile-details">
         <div class="profile-content">
-          <i class="bx bxs-user"></i>
+          <i class="bx bx-log-out" id="logout"></i>
         </div>
 
-        <div class="name-job">
+        <!-- <div class="name-job">
           <div class="profile_name">hello,<span> user</span></div>
-        </div>
+        </div> -->
       </div>
     </div>
     <section class="home-section">
@@ -134,10 +135,119 @@
         <i class="bx bx-menu"></i>
         <span class="text">Home</span>
       </div>
+      <div class="side-content">
+        <h3>Welcome!</h3>
+        <div class="sub-side-content">
+          <div>
+            <img
+              src="https://assets.mailtrap.io/packs/assets/media/sandbox-inactive-74f82ada44702b76a860.svg"
+              alt=""
+            />
+            <div>
+              <div>
+                <h1>Sandbox</h1>
+                <p>Test Emails on Staging</p>
+              </div>
+              <div>
+                <a href="">Set Up Inbox</a>
+              </div>
+            </div>
+            <div>
+              <h3>Fake SMTP Server</h3>
+              <p>Capture SMTP traffic from staging and dev environments.</p>
+            </div>
+            <div>
+              <h3>QA Automation</h3>
+              <p>
+                Cover all your testing scenarios with Mailtrap’s well-documented
+                API
+              </p>
+            </div>
+            <div>
+              <h3>Preview and validate HTML/CSS</h3>
+              <p>
+                View messages, check spam scores, validate headers. Check the
+                HTML & CSS support for top email clients.
+              </p>
+            </div>
+            <div>
+              <h3>Inbox email address</h3>
+              <p>
+                Dedicated email address for each of your Inboxes to send
+                messages from other email accounts or from your application.
+              </p>
+            </div>
+            <div class="video-image">
+              <img
+                src="https://assets.mailtrap.io/packs/assets/app/how-sandbox-works-1dac52185a6057768149.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div>
+            <img
+              src="https://assets.mailtrap.io/packs/assets/media/email-api-inactive-2b963546ca2b49da77d3.svg"
+              alt=""
+            />
+            <div>
+              <div>
+                <h1>Email API</h1>
+                <p>Send Emails on Production</p>
+              </div>
+              <div>
+                <a href="">Set Up Domain</a>
+              </div>
+            </div>
+            <div>
+              <h3>SMTP Service, API/SDK</h3>
+              <p>
+                Integrate with our scalable cloud MTA cluster to send your
+                production emails. Well-documented API compatible with common
+                email providers.
+              </p>
+            </div>
+
+            <div>
+              <h3>SPF, DKIM, DMARC, Dedicated IP</h3>
+              <p>
+                SPF, DKIM, DMARC configuration aligned with major mailbox
+                providers (GMail, Outlook, ProtonMail, Yahoo, etc.). Dedicated
+                IPs. Support and monitoring by deliverability experts.
+              </p>
+            </div>
+            <div>
+              <h3>Deliverability Alerts</h3>
+              <p>
+                Special alerts similar to servers performance monitoring.
+                Triggered by drop in vital metrics such as bounces, open, click
+                and spam rates.
+              </p>
+            </div>
+            <div>
+              <h3>Email content and logs</h3>
+              <p>
+                60 days of content retention. Detailed diagnostic logs. Rich
+                filters. History of events. Email preview. Spam and blocklist
+                analysis.
+              </p>
+            </div>
+            <div class="video-image">
+              <img
+                src="https://assets.mailtrap.io/packs/assets/app/how-email-api-works-194645224abb7bacb756.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </body>
   <script>
     let arrow = document.querySelectorAll(".arrow");
+    let logout_btn = document.getElementById("logout");
+    logout_btn.addEventListener("click", () => {
+      window.location.href = "/index.html";
+    });
     // console.log(arrow);
     for (let index = 0; index < arrow.length; index++) {
       arrow[index].addEventListener("click", (e) => {

@@ -51,9 +51,11 @@
               Office 365 account</a
             >
             <p>OR</p>
-            <form action="">
+            <form action="" id="form">
               <label for="">Email</label>
-              <input type="email" class="email" />
+              <input type="email" class="email" id="user_email" />
+              <label for="">Password</label>
+              <input type="password" class="email" id="password" />
               <input
                 type="submit"
                 value="Sign Up With Your Email"
@@ -169,3 +171,35 @@
     </div>
   </body>
 </html>
+<script>
+  let myform = document.getElementById("form");
+  let data = JSON.parse(localStorage.getItem("data")) || [];
+  let user_email = document.getElementById("user-email");
+  let password = document.getElementById("password");
+
+  // console.log(user_email.value);
+
+  myform.addEventListener("submit", (e) => {
+    e.preventDefault();
+    let isSignup = false;
+    for (let i = 0; i < data.length; i++) {
+      if (myform.user_email.value == data[i].email) {
+        isSignup = true;
+        break;
+      }
+    }
+    if (isSignup == false) {
+      let obj = {
+        email: myform.user_email.value,
+        password: myform.password.value,
+      };
+      data.push(obj);
+      console.log(obj);
+      localStorage.setItem("data", JSON.stringify(data));
+      alert("successfully signup");
+      window.location.href = "/home.html";
+    } else {
+      alert("user already exists");
+    }
+  });
+</script>

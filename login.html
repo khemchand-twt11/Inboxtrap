@@ -49,9 +49,11 @@
               Office 365 account</a
             >
             <p>OR</p>
-            <form action="">
+            <form action="" id="form">
               <label for="">Email</label>
-              <input type="email" class="email" />
+              <input type="email" class="email" id="user_email" />
+              <label for="">password</label>
+              <input type="password" class="email" id="password" />
               <input type="submit" value="Next" class="submit" />
             </form>
             <p id="insp">Haven't received the confirmation email yet?</p>
@@ -148,3 +150,28 @@
     </div>
   </body>
 </html>
+<script>
+  let user_email = document.getElementById("user_email");
+  let data = JSON.parse(localStorage.getItem("data")) || [];
+  let password = document.getElementById("password");
+  let myform = document.getElementById("form");
+
+  myform.addEventListener("submit", (e) => {
+    e.preventDefault();
+    let n;
+    let isCredentials = false;
+    for (let i = 0; i < data.length; i++) {
+      if (
+        user_email.value == data[i].email &&
+        password.value == +data[i].password
+      ) {
+        isCredentials = true;
+      }
+    }
+    if (isCredentials == true) {
+      window.location.href = "/home.html";
+    } else {
+      alert("wrong credentials");
+    }
+  });
+</script>
