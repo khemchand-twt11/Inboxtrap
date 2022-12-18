@@ -45,7 +45,156 @@ html {
 /**************************************/
 
 .logo {
-  width: 33%;
+  width: 55%;
+}
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 7rem;
+  padding: 0 14.2rem;
+  background-color: #f1f1f15f;
+}
+.aa {
+  display: block;
+  margin-right: 18rem;
+}
+
+.main-nav-list {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 5.2rem;
+}
+.main-nav-links {
+  text-decoration: none;
+  color: #243f5c;
+  font-weight: 700;
+  display: inline-block;
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.main-nav-btn1 {
+  border: 1px solid #243f5c;
+  padding: 0.6rem 1.6rem;
+  border-radius: 0.7rem;
+}
+.main-nav-btn1:hover {
+  background-color: #243f5c;
+  color: #fff;
+}
+.main-nav-btn2 {
+  background-color: #22d172;
+  padding: 0.6rem 1.6rem;
+  border-radius: 0.7rem;
+  color: #ffffff;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+}
+.main-nav-btn2:hover {
+  background-color: #45e890;
+}
+
+.main-nav-list img {
+  width: 8%;
+  margin-bottom: 0.3rem;
+}
+.main-nav-list li:nth-child(1) {
+  width: 17%;
+}
+.main-nav-list li:nth-child(4) {
+  width: 14%;
+}
+/**************************************/
+/*NAVIGATION Dropdown*/
+/**************************************/
+.main-nav-list > li:nth-child(1) {
+  position: relative;
+}
+.main-nav-list > li:nth-child(4) {
+  position: relative;
+}
+.wrapper {
+  display: none;
+}
+.wrapper img {
+  width: 90%;
+}
+.wrapper img:nth-child(3) {
+  width: 60%;
+}
+.sub-wrapper {
+  display: flex;
+  margin-bottom: 2rem;
+}
+.sub-wrapper > div > a {
+  display: block;
+  text-decoration: none;
+  padding-left: 1.2rem;
+  color: #202c45;
+  font-size: 1.4rem;
+  font-family: "Inter", sans-serif;
+}
+.sub-wrapper > div > :nth-child(2):hover {
+  color: #45e890;
+}
+.sub-wrapper > div > a:nth-child(1) {
+  font-weight: 600;
+  font-size: 1.6rem;
+  margin-bottom: 0.7rem;
+}
+.sub-wrapper > div > a:nth-child(1):hover {
+  color: #45e890;
+}
+.wrapper > div {
+  margin-top: 3.8rem;
+  padding-left: 2.4rem;
+}
+.wrapper > div > div > div:nth-child(1) {
+  width: 20%;
+}
+.main-nav-list > li:nth-child(1):hover .wrapper {
+  position: absolute;
+  top: 2.2rem;
+
+  grid-template-columns: repeat(2, 1fr);
+  left: -9rem;
+  background-color: #fff;
+  display: block;
+  width: 250%;
+  border-radius: 0.8rem;
+  font-size: 1.6rem;
+  /* border: 1px solid black; */
+  /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+}
+.main-nav-list > li:nth-child(4):hover .wrapper {
+  position: absolute;
+  top: 2.2rem;
+
+  grid-template-columns: repeat(2, 1fr);
+  left: -9rem;
+  background-color: #fff;
+  display: block;
+  width: 300%;
+  border-radius: 0.8rem;
+  font-size: 1.6rem;
+  /* border: 1px solid black; */
+  /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+}
+
+/**************************************/
+/*NAVIGATION*/
+/**************************************/
+
+.logo {
+  width: 40%;
 }
 .header {
   display: flex;
@@ -95,7 +244,7 @@ html {
 .sub-header-btn-link {
   text-decoration: none;
   display: block;
-  width: 16%;
+  width: 46%;
   font-size: 1.8rem;
   margin-top: 3.8rem;
   background-color: #22d172;
@@ -182,7 +331,45 @@ html {
 .text-div {
   margin-top: 6.2rem;
 }
+/* contact us  */
+.contact-us {
+  width: 70%;
+  /* border: 1px solid black; */
+  margin: auto;
+  margin-top: 62px;
+  margin-bottom: 62px;
+}
+.contact-us > div {
+  height: 240px;
+  background-color: #f9c273;
+  width: 75%;
+  margin: auto;
+  border-radius: 10px;
+}
+.contact-us > div h1 {
+  font-size: 34px;
+  color: #202c45;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+.contact-us > div p {
+  font-size: 14px;
+  padding-top: 18px;
+  padding-left: 20px;
+  color: #202c45;
+}
+.contact-us > div a {
+  text-decoration: none;
+  font-size: 18px;
+  display: inline-block;
+  margin-top: 20px;
 
+  background-color: #1a2e44;
+  color: #f9c273;
+  padding: 7px 14px;
+  margin-left: 20px;
+  border-radius: 5px;
+}
 /**************************************/
 /*footer*/
 /**************************************/
@@ -198,6 +385,7 @@ html {
 }
 .main-footer > div:nth-child(1) {
   margin-top: 5.2rem;
+  /* margin-left: 100px; */
 }
 .main-footer h1 {
   color: #fff;

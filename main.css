@@ -260,6 +260,7 @@ html {
 }
 .big-banner-img {
   width: 100%;
+  position: relative;
 }
 
 .big-sub-banner {
@@ -272,6 +273,40 @@ html {
   top: 40%;
   left: 46%;
   border-radius: 50%;
+}
+.pause-btn:hover {
+  transform: scale(1.1);
+}
+
+/* video section  */
+.video-container .video {
+  height: 80%;
+  position: absolute;
+  top: 1%;
+  left: 6%;
+  width: 90%;
+  display: none;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  overflow: hidden;
+}
+.video-container .video video {
+  /* position: absolute; */
+  /* top: 1%; */
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 0.2s linear;
+}
+#cross {
+  font-size: 50px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: none;
+  cursor: pointer;
 }
 
 /* first  middle section  */
